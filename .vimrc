@@ -11,4 +11,12 @@ filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
 set expandtab 	      " Use speces intead of tabs
-set tabstop=2 shiftwidth=2 softtabstop=2        " Make a tab 2 spaces	
+set tabstop=2 shiftwidth=2 softtabstop=2        " Make a tab 2 spaces
+
+" Remove trailing whitespaces on save
+autocmd BufWritePre * :%s/\s\+$//e
+set wrap
+set linebreak
+" note trailing space at end of next line
+set showbreak=>\ \ \
+
