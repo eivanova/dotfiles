@@ -20,3 +20,5 @@ set linebreak
 " note trailing space at end of next line
 set showbreak=>\ \ \
 
+" Show line numbers for ruby files
+autocmd filetype ruby setl number
