@@ -15,8 +15,15 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 
 " Ruby for vim
-Bundle 'vim-ruby/vim-ruby'
-
+Plugin 'vim-ruby/vim-ruby'
+" Nerdtree for filesystem view in vim
+Plugin 'scrooloose/nerdtree'
+" Auto-comment any type of file
+Plugin 'scrooloose/nerdcommenter'
+" Outline view for vim
+Plugin 'majutsushi/tagbar'
+" Use Tab for auto-complete
+Plugin 'ervandew/supertab'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
