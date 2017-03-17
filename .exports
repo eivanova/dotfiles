@@ -1,0 +1,21 @@
+# Env variables
+
+# JAVA
+export M2_HOME=
+export PATH=$PATH:$M2_HOME/bin
+#export PATH=$PATH:$HOME/.jenv/bin
+export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=512m"
+export JAVA_HOME=`/usr/libexec/java_home`
+export CATALINA_BASE=
+
+export GIT_SSH_COMMAND='ssh -o KexAlgorithms=+diffie-hellman-group1-sha1'
+export DOCKER_OPTS="-H=0.0.0.0:2376 --tlsverify --tlscacert=/Users/eivanova/dev/bellevue-ci/tools/jenkins/coreos/cfssl/ca.pem --tlscert=/Users/eivanova/dev/bellevue-ci/tools/jenkins/coreos/cfssl/server.pem --tlskey=/Users/eivanova/dev/bellevue-ci/tools/jenkins/coreos/cfssl/server-key.pem"
+
+export PATH=$PATH:"$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export GOPATH=$HOME/dev/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+# Toolchain
+export BUILDAPPSROOT=/build/
+export BUILDAPPS=$BUILDAPPSROOT/bin
+export GOBUILD_VCAC_SUITE_ROOT=.

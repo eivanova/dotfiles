@@ -1,0 +1,24 @@
+[user]
+	name =
+	email =
+[color]
+	ui = true
+[commit]
+[push]
+	default = simple
+[core]
+	editor = vim
+[merge]
+  tool = p4merge
+  keepBackup = false
+[mergetool "p4merge"]
+	cmd = "/Applications/p4merge.app/Contents/Resources/launchp4merge $BASE $REMOTE $LOCAL $MERGED"
+	trustExitCode = false
+  keeTemporaries = false
+  keepBackup = false
+[diff]
+  tool = p4merge
+[difftool "p4merge"]
+  cmd = "/Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE "
+[difftool]
+  prompt = false
