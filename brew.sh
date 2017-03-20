@@ -11,10 +11,17 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
-
-# Install wget
 brew install wget
 
+# Java related
+brew cask install java
+brew install maven
+brew cask install eclipse-java
+
+brew install bash-completion
+brew install git-gerrit
+
+brew cask install google-chrome
 
 # Remove outdated versions from the cellar.
 brew cleanup

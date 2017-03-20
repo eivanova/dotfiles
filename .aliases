@@ -6,6 +6,20 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# Docker machine
+alias dmls="docker-machine ls"
+alias dm-start="docker-machine start ${machine}"
+
+docker-host () {
+  eval "$(docker-machine env $1)"
+}
+
+# Docker clean-up
+docker-rm-all () {
+  docker stop $(docker ps -a -q)
+  docker rm $(docker ps -a -q)
+}
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
@@ -28,5 +42,4 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
-
 

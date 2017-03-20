@@ -4,10 +4,14 @@
 # export MAVEN_OPTS="-Xmx2048m -XX:MaxPermSize=512m"
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/
 
+
 for file in ~/.{path,bash_prompt,exports,aliases,functions,extra,profile}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+# Useful if dealing with multiple java versions
+# eval "$(jenv init -)"
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
