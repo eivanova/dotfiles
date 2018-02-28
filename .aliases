@@ -10,7 +10,7 @@ alias -- -="cd -"
 alias dmls="docker-machine ls"
 alias dm-start="docker-machine start ${machine}"
 
-docker-host () {
+dh () {
   eval "$(docker-machine env $1)"
 }
 
